@@ -41,65 +41,65 @@ document.onkeyup = function(event){
 } 
 //Loop
 
-// while (remainingLetters > 0) {
-// 	var el = document.getElementById("demo");
-// 	el.innerHTML = answerArray.join(" ");
+ while (remainingLetters > 0) {
+ 	var el = document.getElementById("demo");
+ 	el.innerHTML = answerArray.join(" ");
 	
-// 	//Guess
+ 	//Guess
 	
-// 	var guess = prompt("Guess a letter to start, or Cancel to end game");
-// 	if(guess === null) {
-// 		break;
-// 	} else if (guess.length !== 1) {
-// 		alert ("Please enter a letter.");
-// 	} else {
-// 		for (var b = 0; b < spellingWords.length; b++) {
-// 			if (spellingWords[b] === guess){
-// 				answerArray[b] = guess;
-// 					remainingLetters--;
-// 			}
-// 		}
-// 	}
+ 	var guess = prompt("Guess a letter to start, or Cancel to end game");
+ 	if(guess === null) {
+ 		break;
+ 	} else if (guess.length !== 1) {
+ 		alert ("Please enter a letter.");
+ 	} else {
+ 		for (var b = 0; b < spellingWords.length; b++) {
+ 			if (spellingWords[b] === guess){
+ 				answerArray[b] = guess;
+ 					remainingLetters--;
+ 			}
+ 		}
+ 	}
 	
-// 	el.innerHTML = answerArray.join(" ");
-// 	alert("Great job! The answer is " + spellingWords + ".");
+ 	el.innerHTML = answerArray.join(" ");
+ 	alert("Great job! The answer is " + spellingWords + ".");
 
 
-//  // create alphabet ul
-//   var buttons = function () {
-//     myButtons = document.getElementById('buttons');
-//     letters = document.createElement('ul');
+  // create alphabet ul
+   var buttons = function () {
+     myButtons = document.getElementById('buttons');
+     letters = document.createElement('ul');
 
-//     for (var i = 0; i < alphabet.length; i++) {
-//       letters.id = 'alphabet';
-//       list = document.createElement('li');
-//       list.id = 'letters_1';
-//       list.innerHTML = alphabet[i];
-//       check();
-//       myButtons.appendChild(letters);
-//       letters.appendChild(list);
-// 		// startGame();
-//     }
-//   }
+     for (var i = 0; i < alphabet.length; i++) {
+       letters.id = 'alphabet';
+       list = document.createElement('li');
+       list.id = 'letters_1';
+       list.innerHTML = alphabet[i];
+       check();
+       myButtons.appendChild(letters);
+       letters.appendChild(list);
+ 		// startGame();
+     }
+   }
 
-//   }
+   }
 
-//   documentOnKeyUp.eventListener.(event);``
-//// Starts the Game by running the startGame() function
-//startGame();
-//
-//// Then initiates the function for capturing key clicks.
-//document.onkeyup = function(event) {
-//
-//  // Converts all key clicks to lowercase letters.
-//  letterGuessed = String.fromCharCode(event.which).toLowerCase();
-//
-//  // Runs the code to check for correct guesses.
-//  checkLetters(letterGuessed);
-//
-//  // Runs the code that ends each round.
-//  roundComplete();
-//};
-//
+   documentOnKeyUp.eventListener.(event);``
+// Starts the Game by running the startGame() function
+startGame();
+
+// Then initiates the function for capturing key clicks.
+document.onkeyup = function(event) {
+
+  // Converts all key clicks to lowercase letters.
+  letterGuessed = String.fromCharCode(event.which).toLowerCase();
+
+  // Runs the code to check for correct guesses.
+  checkLetters(letterGuessed);
+
+  // Runs the code that ends each round.
+  roundComplete();
+};
+
 
 
